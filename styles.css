@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     padding: 20px;
 }
-.header {
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
-.header::before {
+.navbar::before {
     content: '';
     position: absolute;
     top: 0;
@@ -44,16 +44,20 @@ body {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: .5s;
 }
-.header:hover::before {
+.navbar:hover::before {
     left: 100%;
 }
-.logo {
+#logo {
     color: #fff;
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
 }
+#logo:hover {
+    color: blue;
+}
+
 .navbar a {
     color: #fff;
     font-size: 18px;
