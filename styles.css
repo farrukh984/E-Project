@@ -1,7 +1,7 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Global Styles */
+ /* Global Styles  */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #1d1b1b;
+    background: #6d6565;
     color: #0f0d0d;
     line-height: 1.6;
 }
