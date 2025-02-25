@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Ocean Gate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        
+        body {
+    background: linear-gradient(to right, #002f4b, #005b96, #0084c2); /* Ocean-inspired gradient */
+    color: white; /* Ensures readability */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+body {
+    background: linear-gradient(to right, #002f4b, #005b96, #0084c2);
+    color: white;
+    padding-top: 80px; /* Adjusts for navbar height */
+}
+
+/* .navbar-brand { font-size: 1.5rem; font-weight: bold;   }
+@media (min-width: 768px) {
+    .navbar-nav { text-align: center; }
+    .navbar-collapse { justify-content: center; }
+/* }
+         .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}*/ */
+/* .navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+} 
+.navbar:hover::before {
+    left: 100%;
+}*/
+
+#logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+#logo:hover {
+    color: blue;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: #f00;
+}
+         
+         
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .btn-buy {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        .btn-buy:hover {
+            background-color: #0056b3;
+        }
+        .footer-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .footer-section{
+            flex: 1; 
+            min-width: 250px;
+            padding: 10px;
+        }
+        .footer-icons img{
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s;
+        }
+        
+.footer-icons img:hover {
+    transform: scale(1.05);
+}
+        iframe{
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+        }
+        @media(max-width: 768px) {
+            .navbar-nav {text-align: center;}
+            .navbar-collapse{justify-content: center;}
+            .img1, .footercontainer{
+                flex-direction: column;
+                text-align: center;
+            }
+            .row {
+                flex-direction: column;
+                text-align: center;
+            }
+            .col {
+                width: 100%;
+                text-align: center;
+            }
+                   
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg ">
+        <a class="navbar-brand" href="#" id="logo" style="font-size: 50px;">Ocean Gate</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="Collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li>
+                    <a href="#" class="nav-link ">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Where to</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">About-us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Terminols/Reviews
+                    </a>
+                <ul class="dropdown-menu " style="    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);">
+                        <li><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                        <li><a class="dropdown-item" href="#">Dell</a></li>
+                        <li><a class="dropdown-item" href="#">hp</a></li>
+                        <li><a class="dropdown-item" href="#">Apple</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    </nav>
+
+
+    <section class="container text-center my-5">
+        <h1>Our Products</h1>
+        <p class="lead">Explore our latest range of high-quality optical storage solutions.</p>
+    </section>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top: 80px;" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Gallery/cd.webp" style="height: 700px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="color: white;">Welcome to the Future</h3>
+              <p style="color: white;">Join us on a journey where technology meets perfection—because some things deserve to be stored forever.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="Gallery/service.webp" style="height: 700px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="color: white;">"Preserving Your Memories, Powering Your Future"</h3>
+              <p style="color: white;">From personal memories to professional data, our high-quality storage solutions ensure safety, durability, and seamless performance. Trust us to keep your moments and information secure for years to come.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Gallery/service1.webp" style="height: 700px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;">"Trusted Storage for a Digital World"</h5>
+              <p style="color: white;">Built for durability, designed for efficiency. Our premium solutions ensure that your important moments and essential files are always within reach, today and forever.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="product-card">
+                    <img src="Gallery/cd.webp" class="product-img" alt="CD">
+                    <h4>Premium CDs</h4>
+                    <p>High-durability CDs for long-term storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-card">
+                    <img src="Gallery/cd1 (2).webp" class="product-img" alt="DVD">
+                    <h4>High-Quality DVDs</h4>
+                    <p>Reliable DVDs for data backup and media storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="product-card">
+                    <img src="Gallery/cd2 (2).webp" class="product-img" alt="Blu-ray">
+                    <h4>Blu-ray Discs</h4>
+                    <p>Advanced Blu-ray discs with maximum capacity.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="product-card">
+                    <img src="Gallery/cd3.webp" class="product-img" alt="Rewritable CD">
+                    <h4>Rewritable CDs</h4>
+                    <p>Eco-friendly and reusable optical discs.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="product-card">
+                    <img src="Gallery/cd4.webp" class="product-img" alt="Archival DVD">
+                    <h4>Archival DVDs</h4>
+                    <p>Long-lasting DVDs for professional data storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                <div class="product-card">
+                    <img src="Gallery/cd5.webp" class="product-img" alt="Ultra HD Blu-ray">
+                    <h4>Ultra HD Blu-ray</h4>
+                    <p>Crystal-clear 4K Blu-ray discs for high-definition storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1200">
+                <div class="product-card">
+                    <img src="Gallery/cd6.webp" class="product-img" alt="Gold Archival CD">
+                    <h4>Gold Archival CDs</h4>
+                    <p>Premium gold-layered CDs for ultimate longevity.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1400">
+                <div class="product-card">
+                    <img src="Gallery/cd7.webp" class="product-img" alt="Dual-Layer DVD">
+                    <h4>Dual-Layer DVDs</h4>
+                    <p>Twice the storage capacity of standard DVDs.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1600">
+                <div class="product-card">
+                    <img src="Gallery/cd8.webp" class="product-img" alt="Mini CD">
+                    <h4>Mini CDs</h4>
+                    <p>Compact and portable CDs for specialized storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="1800">
+                <div class="product-card">
+                    <img src="Gallery/cd9.webp" class="product-img" alt="M-Disc Blu-ray">
+                    <h4>M-Disc Blu-ray</h4>
+                    <p>Archival-grade Blu-ray discs for permanent data storage.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="2000">
+                <div class="product-card">
+                    <img src="Gallery/cd10.webp" class="product-img" alt="Printable DVD">
+                    <h4>Printable DVDs</h4>
+                    <p>Customizable DVDs with printable surfaces for labeling.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="2200">
+                <div class="product-card">
+                    <img src="Gallery/cd11.webp" class="product-img" alt="Scratch-Resistant CD">
+                    <h4>Scratch-Resistant CDs</h4>
+                    <p>Durable CDs designed to withstand everyday use.</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eius voluptatibus dolore fugiat
+                    mollitia commodi expedita ullam ut necessitatibus maiores! Blanditiis nihil, quibusdam dolorem
+                    minus omnis ipsa necessitatibus rerum excepturi.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: Ocean Gate@gmail.com</p>
+                <p>Phone: +92 3708541533</p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/login.php/"><img
+                            src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg"
+                         class="rounded"   style="width: 30px; height: 30px;" alt="Facebook Icon"></a>
+                    <a href="https://pk.linkedin.com/"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png"
+                        style="width: 30px; height: 30px;"    alt="Twitter Icon"></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><img
+                         style="width: 30px; height: 30px;"   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                            alt="Instagram Icon"></a>
+                </div>
+            </div>
+            <div class="footer-section footer-location">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Ocean Gate@gmail.com. All rights reserved.</p>
+    </footer>
+    
+    <script>AOS.init();</script>
+</body>
+</html>
