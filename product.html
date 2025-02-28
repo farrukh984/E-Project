@@ -9,12 +9,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
     <style>
         
-        body {
-    background: linear-gradient(to right, #002f4b, #005b96, #0084c2); /* Ocean-inspired gradient */
-    color: white; /* Ensures readability */
-}
+    
 .navbar {
     position: fixed;
      top: 0;
@@ -36,44 +34,10 @@ body {
     padding-top: 80px; /* Adjusts for navbar height */
 }
 
-/* .navbar-brand { font-size: 1.5rem; font-weight: bold;   }
-@media (min-width: 768px) {
-    .navbar-nav { text-align: center; }
-    .navbar-collapse { justify-content: center; }
-/* }
-         .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: rgba(255, 255, 255, .1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-}*/
-/* .navbar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-    transition: .5s;
-} 
-.navbar:hover::before {
-    left: 100%;
-}*/
+
 
 #logo {
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
+    color: #fff;    
 }
 #logo:hover {
     color: blue;
@@ -145,31 +109,93 @@ body {
             max-width: 300px;
             height: 200px;
         }
-        @media(max-width: 768px) {
-            .navbar-nav {text-align: center;}
-            .navbar-collapse{justify-content: center;}
-            .img1, .footercontainer{
-                flex-direction: column;
-                text-align: center;
-            }
-            .row {
-                flex-direction: column;
-                text-align: center;
-            }
-            .col {
-                width: 100%;
-                text-align: center;
-            }
         #bun:hover{
         color: white;
         }
-        
-        }
+        .modal-content {
+    background-color: #0a192f; /* Navy Blue Background */
+    color: #e0e0e0; /* Light Silver Text */
+    border: 2px solid #4f8ff7; /* Royal Blue Border */
+}
+
+.modal-header {
+    background-color: #1e3a8a; /* Deep Blue */
+    border-bottom: 2px solid #4f8ff7; /* Royal Blue */
+    
+}
+
+.modal-footer {
+    background-color: #0a1a2e; /* Dark Blue Shade */
+    border-top: 2px solid #4f8ff7;
+}
+
+.modal-title {
+    color: #4f8ff7; /* Royal Blue */
+}
+
+dt {
+    color: #c0c0c0; /* Silver for headings */
+}
+dd{
+    color: #c0c0c0;
+}
+.btn-outline-success {
+    border-color: #4f8ff7; 
+    color: #4f8ff7; 
+    transition: 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: #1e3a8a; /* Deep Blue */
+
+}
+#staticBackdropLabel:hover{
+    color: #0a192f;
+}
+/* #hl1{
+    transition: transform 0.5s;
+}
+
+#hl1:hover{
+    transform: scale(1.05);
+} */
+Gallery/cd11.webp{
+   transition: transform 0.5s;
+}
+Gallery/cd11.webp:hover{
+    transform: scale(1.05);
+}
+.navbar .{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+.navbar:hover::before {
+    left: 100%;
+}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-lg ">
-        <a class="navbar-brand" href="#" id="logo" style="font-size: 22px;">Ocean Gate</a>
+        <a class="navbar-brand" href="#" id="logo" style="font-size: 21px;">Ocean Gate</a>
         <button class="navbar-toggler" id="bun" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
             <span class="navbar-toggler-icon" id="tog"></span>
@@ -204,36 +230,6 @@ body {
             </ul>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-dark navbar-expand-lg bg-dark " id="nav">
-        <a class="navbar-brand" href="#"  style="font-size: 22px;">Ocean Gate</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Feedback</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    </div>
-    </nav> -->
-
-
     <section class="container text-center my-5">
         <h1>Our Products</h1>
         <p class="lead">Explore our latest range of high-quality optical storage solutions.</p>
@@ -371,33 +367,298 @@ body {
                     <img src="Gallery/cd11.webp" class="product-img" alt="Scratch-Resistant CD">
                     <h4>Scratch-Resistant CDs</h4>
                     <p>Durable CDs designed to withstand everyday use.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go
+                        somewhere</a>
                 </div>
             </div>            
         </div>
     </div>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- Modal
+  <div class="modal fade" style="color: #333;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ocean Gate</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="row">
+            <div class="col">
+                <img src="Gallery/cd11.webp" alt="CD12" class="img-fluid">
+            </div>
+            <div class="col" style="color:#333"> -->
+                    <!-- <dt>Material:</dt>
+                    <dd>Scratch-resistant CDs, crafted for durability, ensure long-lasting performance without compromising quality. Perfect for everyday use, these CDs resist wear and tear, keeping your data safe.</dd> -->
+                     <!-- <dt>Durable Design:</dt>
+                    <dd> Built to withstand everyday handling and wear.</dd>  
+<dt>Scratch-Resistant Surface:</dt><dd> Protects data from damage and ensures longevity.</dd>  
+<dt>High-Quality Storage:</dt> <dd>Maintains excellent playback and data integrity.</dd> 
+<dt>Versatile Use:</dt> <dd>Ideal for music, videos, backups, and software storage.</dd>  
+<dt>Reliable Performance:</dt> <dd>Reduces the risk of data loss due to scratches.</dd> 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <dt>Versatile Use:</dt> <dd>Ideal for music, videos, backups, and software storage.</dd>  
+<dt>Reliable Performance:</dt> <dd>Reduces the risk of data loss due to scratches.</dd>
+            </div>
+        </div>
+        <div class="modal-footer" style="justify-content: center;">
+        <dt><del class="text-secondary">Price:8.3$</del></dt>  <dd><strong>Only:5.3$</strong></dd><div class="row"><div class="col">
+        <i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star-half-stroke" style="color: gold;"></i></div></div>
+        Qty<input type="number">
+
+        <button type="button" class="btn btn-outline-success" style="width: 400px;">Buy Now</button>
         </div>
       </div>
+    </div> -->
+    <!-- Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd11.webp" id="hl1" alt="CD11" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Durable Design:</dt>
+                        <dd>Built to withstand everyday handling and wear.</dd>  
+                        <dt>Scratch-Resistant Surface:</dt>
+                        <dd>Protects data from damage and ensures longevity.</dd>  
+                        <dt>High-Quality Storage:</dt> 
+                        <dd>Maintains excellent playback and data integrity.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Versatile Use:</dt> 
+                        <dd>Ideal for music, videos, backups, and software storage.</dd>  
+                        <dt>Reliable Performance:</dt> 
+                        <dd>Reduces the risk of data loss due to scratches.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $8.3</del>  
+                        <strong class="text-success">Only: $5.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="wow" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Buy()">Buy Now</button>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<!-- <script>
+    function buyNowAlert() {
+        alert("Thank you for your purchase! Your order has been placed successfully.");
+    }
+</script> -->
+
+<!-- <script>
+    function Alert() {
+        var quantity = document.getElementById('quantity').value; // Qty input value
+        if (quantity === "" || quantity <= 0) {
+            alert("Please enter a valid quantity before purchasing.");
+        } else {
+            alert("Thank you for your purchase! Your order has been placed successfully.");
+        }
+    }
+</script> -->
+<!-- <script>
+    function Alert() {
+        var quantity = document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 0) {
+            alert("Please enter a valid quantity before purchasing.");
+        } else {
+            alert("Thank you for your purchase! Your order has been placed successfully.");
+            var modal = document.getElementById('staticBackdrop'); // Get modal by ID
+            var modalInstance = bootstrap.Modal.getInstance(modal); // Bootstrap modal instance
+            modalInstance.hide(); // Close modal
+        }
+    }
+</script> -->
+
+<!-- <script>
+    function Alert() {
+        var quantity =document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 0) {
+            alert("plaese alert");
+        }
+        else {
+            alert("thank you");
+            var modal = document.getElementById('staticBackdrop');
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide(); 
+        }
+    }
+</script> -->
+<!-- <script>
+    function Alert() {
+        alert("Thank you for shopping this the website")
+    }
+</script> -->
+<!-- <script>
+    function Alert(){
+        var quantity =document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 0) {
+            alert("Plesures");
+        } else {
+            alert("quantityfor me")
+        }
+    }
+</script> -->
+<!-- <script>
+    function Alert () {
+        var quantity = document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 0)  {
+        alert("Please fill your quantity");
+    } else {
+        alert("Plaese try")
+    }
+}
+</script> -->
+<!-- <script>
+    function BuyNowAlert() {
+        var quantity = document.getElementById('quantity').value; 
+        if (quantity === "" || quantity >= 3) {
+            alert("chal oay shukriya");
+        } else {
+            alert("Abay bhai quantity tou de");
+        }
+    }
+</script> -->
+<!-- <script>
+    function BuyNowAlert() {
+        var quantity = document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 3) {
+            alert("Thank you");
+        } else {
+            alert ("Just for minutes...")
+        }
+    }
+</script> -->
+<!-- <script>
+    function BuyNowAlert() {
+        var quantity = document.getElementById('quantity').value;
+        if (quantity === "" || quantity >= 4) {
+            alert("take care for yourself")
+        } else {
+            alert ("thats it right");
+            var modal = document.getElementById('staticBackdrop');
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script> -->
+<!-- <script>
+    function BuyNowAlert() {
+        var quantity = document.getElementById('quantity').value;
+        if (quantity === "" || quantity <= 2) {
+            alert ("Please try again");
+        } else {
+            alert("thank you");
+            var modal = document.getElementById('staticBackdrop');
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script> -->
+<!-- <script>
+    function Buy() {
+        var wow = document.getElementById('wow').value;
+        if (wow === "" ||  wow <= 2) {
+            alert ("thats for wow")
+        } else {
+            alert("likes for wow");
+            var modal = document.getElementById("staticBackdrop");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script> -->
+
+<!-- Include jQuery (اگر پہلے سے شامل نہیں ہے) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- <script>
+    $(document).ready(function() {
+        $(".buy-now-btn").click(function() {
+            var wow = $("#wow").val(); // Quantity input کا ویلیو لینا
+
+            if (wow === "" || wow <= 0) {
+                alert("Please enter a valid quantity before purchasing.");
+            } else {
+                alert("Thank you for your purchase! Your order has been placed successfully.");
+
+                // Bootstrap modal کو hide کرنے کے لیے
+                $("#staticBackdrop").modal("hide");
+            }
+        });
+    });
+</script> -->
+<!-- <script>
+    function Buy() {
+        var wow = document.getElementById('wow').value;
+        if (wow === "" || wow <= 2) {
+            alert("control");
+        } else {
+            alert("liked");
+            var modal = document.getElementById("staticBackdrop")
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script> -->
+
+<!-- <script>
+    function Buy() {
+        var wow = document.getElementById('wow').value;
+        if (wow === "" || wow >= 2) {
+            alert("wow is not")
+        } else {
+            alert("thank you")
+            var modal = document.getElementById("staticBackdrop");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+
+    }
+</script> -->
+
+<script>
+    function Buy() {
+        var wow = document.getElementById('wow').value;
+        if (wow === "" || wow <= 0) {
+            alert("please response")
+        }  else {
+            alert ("Thats for good!")
+            var modal = document.getElementById("staticBackdrop");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+
+
+
+
   </div>
 
     <footer>
