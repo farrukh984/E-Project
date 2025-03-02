@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" 
@@ -24,16 +23,42 @@
 
   <div style="background-color: black;">
 
-    <header class="header">
-        <a href="#" class="logo">Ocean Gate</a>
-        <nav class="navbar">
-            <a href="#">Products</a>
-            <a href="#">Support</a>
-            <a href="#">Where to Buy</a>
-            <a href="#">About us</a>
-            <a href="#">Testimonials/Reviews</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-light navbar-expand-lg ">
+        <a class="navbar-brand" href="#" id="logo" style="font-size: 21px;">Ocean Gate</a>
+        <button class="navbar-toggler" id="bun" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="tog"></span>
+        </button>
+        <div class="Collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link ">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contect.html" class="nav-link">Where to</a>
+                </li>
+                <li class="nav-item">
+                    <a href="About-us.html" class="nav-link">About-us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Terminols/Reviews
+                    </a>
+                <ul class="dropdown-menu " style=" background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);">
+                        <li class="nav-item"><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">Lenovo</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">Dell</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">hp</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">Apple</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <br><br>
 
     <!-- form start -->

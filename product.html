@@ -165,7 +165,7 @@ Gallery/cd11.webp{
 Gallery/cd11.webp:hover{
     transform: scale(1.05);
 }
-.navbar .{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -197,22 +197,22 @@ Gallery/cd11.webp:hover{
     <nav class="navbar navbar-light navbar-expand-lg ">
         <a class="navbar-brand" href="#" id="logo" style="font-size: 21px;">Ocean Gate</a>
         <button class="navbar-toggler" id="bun" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="tog"></span>
         </button>
         <div class="Collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">Products</a>
+                    <a href="product.html" class="nav-link ">Products</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Support</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Where to</a>
+                    <a href="contect.html" class="nav-link">Where to</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About-us</a>
+                    <a href="About-us.html" class="nav-link">About-us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -234,7 +234,7 @@ Gallery/cd11.webp:hover{
         <h1>Our Products</h1>
         <p class="lead">Explore our latest range of high-quality optical storage solutions.</p>
     </section>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top: 80px;" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-3" style="margin-top: 80px;" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -302,7 +302,7 @@ Gallery/cd11.webp:hover{
                 <div class="product-card">
                     <img src="Gallery/cd3.webp" class="product-img" alt="Rewritable CD">
                     <h4>Rewritable CDs</h4>
-                    <p>Eco-friendly and reusable optical discs.</p>
+                    <p>Eco-friendly and reusable optical discs for long-term storage.</p>
                     <button class="btn btn-buy">Buy Now</button>
                 </div>
             </div>
@@ -310,7 +310,7 @@ Gallery/cd11.webp:hover{
                 <div class="product-card">
                     <img src="Gallery/cd4.webp" class="product-img" alt="Archival DVD">
                     <h4>Archival DVDs</h4>
-                    <p>Long-lasting DVDs for professional data storage.</p>
+                    <p>Long-lasting DVDs for professional data storage preservation.</p>
                     <button class="btn btn-buy">Buy Now</button>
                 </div>
             </div>
@@ -366,7 +366,7 @@ Gallery/cd11.webp:hover{
                 <div class="product-card">
                     <img src="Gallery/cd11.webp" class="product-img" alt="Scratch-Resistant CD">
                     <h4>Scratch-Resistant CDs</h4>
-                    <p>Durable CDs designed to withstand everyday use.</p>
+                    <p>Durable CDs designed to withstand everyday use and labeling.</p>
                     <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go
                         somewhere</a>
                 </div>
@@ -642,7 +642,7 @@ Gallery/cd11.webp:hover{
     }
 </script> -->
 
-<script>
+<!-- <script>
     function Buy() {
         var wow = document.getElementById('wow').value;
         if (wow === "" || wow <= 0) {
@@ -654,7 +654,14 @@ Gallery/cd11.webp:hover{
             modalInstance.hide();
         }
     }
+</script> -->
+
+<script>
+    function Buy() {
+        var wow = document.getElementById('wow')
+    }
 </script>
+
 
 
 
