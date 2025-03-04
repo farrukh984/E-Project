@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Customer Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .review-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e5e7eb;
+            border-radius: 12px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1d4ed8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+    <script>
+        function addReview() {
+            const nameInput = document.getElementById('name');
+            const reviewInput = document.getElementById('review');
+            const imageInput = document.getElementById('image');  // New input for the image URL
+            const reviewsContainer = document.getElementById('reviews-container');
+
+            if (nameInput.value && reviewInput.value) {
+                const newReview = document.createElement('div');
+                newReview.className = 'card';
+
+                // Check if the user provided an image URL
+                const imageURL = imageInput.value ? imageInput.value : 'https://via.placeholder.com/50';  // Default image if no URL is provided
+
+                newReview.innerHTML = `
+                    <img src="${imageURL}" alt="Customer Image">
+                    <div>
+                        <h3>${nameInput.value}</h3>
+                        <p>${reviewInput.value}</p>
+                    </div>
+                `;
+                reviewsContainer.appendChild(newReview);
+                nameInput.value = '';
+                reviewInput.value = '';
+                imageInput.value = '';  // Clear the image input field
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Service!</h1>
+        <p>We provide the best solutions for your needs.</p>
+    </header>
+
+    <section class="review-form">
+        <h2>Add Your Review</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="review" placeholder="Your Review" rows="4" required></textarea>
+        <input type="text" id="image" placeholder="Image URL (Optional)">
+        <button onclick="addReview()">Submit Review</button>
+    </section>
+
+    <section>
+        <h2>Customer Reviews</h2>
+        <div class="reviews" id="reviews-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Customer Image">
+                <div>
+                    <h3>Ali Khan</h3>
+                    <p>Bohat zabardast service thi!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Customer Image">
+                <div>
+                    <h3>Sana Malik</h3>
+                    <p>Highly recommended, great experience!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Customer Image">
+                <div>
+                    <h3>Usman Tariq</h3>
+                    <p>Amazing quality and fast delivery!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

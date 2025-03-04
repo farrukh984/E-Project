@@ -2,159 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,
-                   initial-scale=1.0">
-    <title>Feedback Form with map</title>
-    <link rel="stylesheet" 
-          href="index.css">
-    <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-          integrity=
-"sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" />
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ocean Gate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+<style>
+    body {
+    background: linear-gradient(to right, #002f4b, #005b96, #0084c2);
+    color: rgba(255, 255, 255, 0.808);
+    padding-top: 80px; /* Adjusts for navbar height */
+}
+</style>
 </head>
-
 <body>
-
-  <div style="background-color: black;">
-
-    <nav class="navbar navbar-light navbar-expand-lg ">
-        <a class="navbar-brand" href="#" id="logo" style="font-size: 21px;">Ocean Gate</a>
-        <button class="navbar-toggler" id="bun" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" id="tog"></span>
-        </button>
-        <div class="Collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                    <a href="product.html" class="nav-link ">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Support</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contect.html" class="nav-link">Where to</a>
-                </li>
-                <li class="nav-item">
-                    <a href="About-us.html" class="nav-link">About-us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Terminols/Reviews
-                    </a>
-                <ul class="dropdown-menu " style=" background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);">
-                        <li class="nav-item"><a class="dropdown-item" href="#">Samsung</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="#">Lenovo</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="#">Dell</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="#">hp</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="#">Apple</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <br><br>
+    <header class="header">
+        <a href="#" class="logo">Ocean Gate</a>
+        <i class='bx bx-menu' s id="menu-icon" style="color: aliceblue;"></i>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="product.html">Product</a>
+            <a href="About-us.html">About</a>
+            <a href="review.html">review</a>
+            <a href="contect.html">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-bg" ></div>
+    <script>
+      const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const navbg = document.querySelector('.nav-bg');
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbg.classList.toggle('active');
+});
+    </script>
 
     <!-- form start -->
+<main>
     <div class="container">
-  
-    <div class="ffbox">
-        <div class="ffbox1">
-            <h1 class="gfg">Ocean Gate</h1>
-            <h2>Contact Us</h2>
-            <form>
-                <label for="fullName">
-                    <i class="fa fa-solid fa-user" 
-                       style="margin: 2px;">
-                    </i> Full Name:
-                </label>
-                <input type="text" 
-                       id="fullName" 
-                       name="fullName" required>
+        <div class="ffbox">
+            <div class="ffbox1">
+                <h1 class="gfg">Ocean Gate</h1>
+                <h2>Contact Us</h2>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <label for="fullName">
+                        <i class="fa fa-solid fa-user" style="margin: 2px;"></i> Full Name:
+                    </label>
+                    <input type="text" id="fullName" name="fullName" required>
 
-                <label for="email">
-                    <i class="fa fa-solid fa-envelope" 
-                       style="margin: 2px;">
-                    </i>
-                    Email Address:
+                    <label for="email">
+                        <i class="fa fa-solid fa-envelope" style="margin: 2px;"></i> Email Address:
+                    </label>
+                    <input type="email" id="email" name="email" required>
 
-                </label>
-                <input type="email"
-                       id="email" 
-                       name="email" required>
+                    <label for="mobile">
+                        <i class=" fa fa-solid fa-phone" style="margin: 2px;"></i> Contact No:
+                    </label>
+                    <input type="tel" id="mobile" name="mobile" required>
 
-                <label for="mobile">
-                    <i class=" fa fa-solid fa-phone" 
-                       style="margin: 2px;">
-                    </i>
-                    Contact No:
-                </label>
-                <input type="tel"
-                       id="mobile" 
-                       name="mobile" required>
+                    <label for="msg">
+                        <i class=" fa fa-solid fa-comment" style="margin: 2px;"></i> Write Message:
+                    </label>
+                    <textarea id="msg" name="msg" rows="5" required></textarea>
 
-                <label for="msg">
-                    <i class=" fa fa-solid fa-comment" 
-                       style="margin: 2px;">
-                    </i>
-                    Write Message:
-                </label>
-                <textarea id="msg" 
-                          name="msg" 
-                          rows="5" required>
-                </textarea>
-
-                <button type="submit">
-                    Submit
-                </button>
-            </form>
-        </div>
-        <div class="map-div">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau" allowfullscreen="" loading="lazy"
-            
-                    width="375" 
-                    height="100%" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau" allowfullscreen="" loading="lazy" width="400" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
-  </div>
-  <br><br>
-  <!-- Footer -->
- <footer>
-  <div class="footer-container">
-      <div class="footer-section">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eius voluptatibus dolore fugiat mollitia commodi expedita ullam ut necessitatibus maiores! Blanditiis nihil, quibusdam dolorem minus omnis ipsa necessitatibus rerum excepturi.</p>
-      </div>
-      <div class="footer-section">
-          <h3>Contact</h3>
-          <p>Email:asdfg@gmail.com</p>
-          <p>Phone: +92 3130268012</p>
-          <div class="footer-icons">
-              <a href="https://www.facebook.com/login.php/"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg" alt="Facebook Icon"></a>
-              <a href="https://pk.linkedin.com/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="Twitter Icon"></a>
-              <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon"></a>
-          </div>
-      </div>
-      <div class="footer-section footer-location">
-          <h3>Location</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-  </div>
-  <p style="text-align: center; margin-top: 20px;">&copy; 2025 Insurance Website. All rights reserved.</p>
-</footer>
-</div>
+    </div>
+</main> <!-- form start -->
+<script>
+function validateForm() {
+    // Get form values
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const mobile = document.getElementById("mobile").value;
+    const msg = document.getElementById("msg").value;
 
-</body>
+    // Full Name validation
+    const nameRegex = /^[a-zA-Z\s]+$/; // Only letters and spaces
+    if (!nameRegex.test(fullName)) {
+        alert("Full Name should only contain letters and spaces.");
+        return false;
+    }
+
+    // Email validation (basic email regex)
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // Mobile validation (basic phone number validation)
+    const mobileRegex = /^[0-9]{10}$/; // 10 digit phone number
+    if (!mobileRegex.test(mobile)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+    }
+
+    // Message validation (check if message is not empty)
+    if (msg.trim() === "") {
+        alert("Please write a message.");
+        return false;
+    }
+
+    return true; // All validations passed
+}
+</script>
+            <!-- form start -->
+            <!-- <main >
+    <div class="container ">
+  
+        <div class="ffbox">
+            <div class="ffbox1">
+                <h1 class="gfg">Ocean Gate</h1>
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="fullName">
+                        <i class="fa fa-solid fa-user" 
+                           style="margin: 2px;">
+                        </i> Full Name:
+                    </label>
+                    <input type="text" 
+                           id="fullName" 
+                           name="fullName" required>
+    
+                    <label for="email">
+                        <i class="fa fa-solid fa-envelope" 
+                           style="margin: 2px;">
+                        </i>
+                        Email Address:
+    
+                    </label>
+                    <input type="email"
+                           id="email" 
+                           name="email" required>
+    
+                    <label for="mobile">
+                        <i class=" fa fa-solid fa-phone" 
+                           style="margin: 2px;">
+                        </i>
+                        Contact No:
+                    </label>
+                    <input type="tel"
+                           id="mobile" 
+                           name="mobile" required>
+    
+                    <label for="msg">
+                        <i class=" fa fa-solid fa-comment" 
+                           style="margin: 2px;">
+                        </i>
+                        Write Message:
+                    </label>
+                    <textarea id="msg" 
+                              name="msg" 
+                              rows="5" required>
+                    </textarea>
+    
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau" allowfullscreen="" loading="lazy"
+                
+                        width="400" 
+                        height="100%" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+      </div> -->
+
+    </main>
+
+      <!-- Footer -->
+      <main style="margin-top: 50px;">
+        <footer>
+         <hr>
+         <div class="footer-container">
+             <div class="footer-section">
+                 <h3 >Ocean Gate</h3>
+                 <p>We are committed to delivering the best marine and oceanic solutions worldwide the best marine and oceanic solutions.</p>
+             </div>
+       
+       
+             <div class="footer-section">
+                 <h3>product</h3>
+             <a href="#">Products</a>
+             <a href="#">Support</a>
+             <a href="#">Where to Buy</a>
+             <a href="#">About us</a>
+             <a href="#">Testimonials/Reviews</a>
+             </div>
+       
+             
+             <div class="footer-section">
+                 <h3>Contact</h3>
+                 <p>Email:asdfg@gmail.com</p>
+                 <p>Phone: +92 3130268012</p>
+                 <div class="footer-icons">
+                     <a href="https://www.facebook.com/login.php/"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg" alt="Facebook Icon"></a>
+                     <a href="https://pk.linkedin.com/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="Twitter Icon"></a>
+                     <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon"></a>
+                 </div>
+                 <br><br>
+                
+             </div>
+             <div class="footer-section footer-location">
+                 <h3>Location</h2>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509354!2d144.95543131558267!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f1d9a6df317!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1613995208949!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+             </div>
+         </div>
+         <!-- <p style="font-size: 20px;"style="text-align: center; margin-top: 70px;">&copy; 2025 Insurance Website. All rights reserved.</p> -->
+       </footer>
+       </main>
 
 
-</html>
+   </body>
+   </html>
