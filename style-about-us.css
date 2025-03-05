@@ -125,11 +125,15 @@
      display: block;
    }
  }
+
+ h3{
+  font-size: 35px;
+ }
  
  
   /* footer css start */
 footer {
-    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+  background: linear-gradient(to right, #002f4b, #005b96, #0084c2);
         color: white;
         padding: 20px 0;
     }
@@ -139,7 +143,7 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 1200px;
-        height: 200px;
+        height: 250px;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -186,7 +190,7 @@ footer {
   left: -250%;
   width: 250%;
   height: 250%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(#002f4b), transparent);
   transition: 0.5s;
   }
   .footer-container:hover::before {
