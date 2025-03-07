@@ -83,11 +83,11 @@ body {
         .footer-icons img{
             width: 32px;
             height: 32px;
-            transition: transform 0.3s;
+            transition: transform 0.9s;
         }
         
 .footer-icons img:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
         iframe{
             width: 100%;
@@ -98,28 +98,28 @@ body {
         color: white;
         }
         .modal-content {
-    background-color: #0a192f; /* Navy Blue Background */
-    color: #e0e0e0; /* Light Silver Text */
-    border: 2px solid #4f8ff7; /* Royal Blue Border */
+    background-color: #0a192f;
+    color: #e0e0e0; 
+    border: 2px solid #4f8ff7; 
 }
 
 .modal-header {
-    background-color: #1e3a8a; /* Deep Blue */
-    border-bottom: 2px solid #4f8ff7; /* Royal Blue */
+    background-color: #1e3a8a;
+    border-bottom: 2px solid #4f8ff7;
     
 }
 
 .modal-footer {
-    background-color: #0a1a2e; /* Dark Blue Shade */
+    background-color: #0a1a2e; 
     border-top: 2px solid #4f8ff7;
 }
 
 .modal-title {
-    color: #4f8ff7; /* Royal Blue */
+    color: #4f8ff7;
 }
 
 dt {
-    color: #c0c0c0; /* Silver for headings */
+    color: #c0c0c0;
 }
 dd{
     color: #c0c0c0;
@@ -131,19 +131,12 @@ dd{
 }
 
 .btn-outline-success:hover {
-    background-color: #1e3a8a; /* Deep Blue */
+    background-color: #1e3a8a; 
 
 }
 #staticBackdropLabel:hover{
     color: #0a192f;
 }
-/* #hl1{
-    transition: transform 0.5s;
-}
-
-#hl1:hover{
-    transform: scale(1.05);
-} */
 Gallery/cd11.webp{
    transition: transform 0.5s;
 }
