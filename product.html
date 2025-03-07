@@ -9,189 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <style>
-        
-    
-.navbar {
-    position: fixed;
-     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: rgba(255, 255, 255, .1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, .2); 
-    z-index: 1000; /* Ensures navbar stays on top */
-}
-
-body {
-    background: linear-gradient(to right, #002f4b, #005b96, #0084c2);
-    color: white;
-    padding-top: 80px; /* Adjusts for navbar height */
-}
-
-
-
-#logo {
-    color: #fff;    
-}
-#logo:hover {
-    color: blue;
-}
-
-.navbar a {
-    color: #fff;
-    font-size: 22px;
-    text-decoration: none;
-    margin-left: 35px;
-    transition: .3s;
-}
-.navbar a:hover {
-    color: #f00;
-}
-         
-         
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: scale(1.05);
-        }
-        .product-img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-        .btn-buy {
-            background-color: #007bff;
-            color: white;
-            border-radius: 20px;
-            padding: 8px 20px;
-        }
-        .btn-buy:hover {
-            background-color: #0056b3;
-        }
-        .footer-container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        .footer-section{
-            flex: 1; 
-            min-width: 250px;
-            padding: 10px;
-        }
-        .footer-icons img{
-            width: 32px;
-            height: 32px;
-            transition: transform 0.3s;
-        }
-        
-.footer-icons img:hover {
-    transform: scale(1.05);
-}
-        iframe{
-            width: 100%;
-            max-width: 300px;
-            height: 200px;
-        }
-        #bun:hover{
-        color: white;
-        }
-        .modal-content {
-    background-color: #0a192f; /* Navy Blue Background */
-    color: #e0e0e0; /* Light Silver Text */
-    border: 2px solid #4f8ff7; /* Royal Blue Border */
-}
-
-.modal-header {
-    background-color: #1e3a8a; /* Deep Blue */
-    border-bottom: 2px solid #4f8ff7; /* Royal Blue */
-    
-}
-
-.modal-footer {
-    background-color: #0a1a2e; /* Dark Blue Shade */
-    border-top: 2px solid #4f8ff7;
-}
-
-.modal-title {
-    color: #4f8ff7; /* Royal Blue */
-}
-
-dt {
-    color: #c0c0c0; /* Silver for headings */
-}
-dd{
-    color: #c0c0c0;
-}
-.btn-outline-success {
-    border-color: #4f8ff7; 
-    color: #4f8ff7; 
-    transition: 0.3s;
-}
-
-.btn-outline-success:hover {
-    background-color: #1e3a8a; /* Deep Blue */
-
-}
-#staticBackdropLabel:hover{
-    color: #0a192f;
-}
-/* #hl1{
-    transition: transform 0.5s;
-}
-
-#hl1:hover{
-    transform: scale(1.05);
-} */
-Gallery/cd11.webp{
-   transition: transform 0.5s;
-}
-Gallery/cd11.webp:hover{
-    transform: scale(1.05);
-}
-.navbar .{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: rgba(255, 255, 255, .1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-}
-.navbar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-    transition: .5s;
-}
-.navbar:hover::before {
-    left: 100%;
-}
-    </style>
+    <link rel="stylesheet" href="product.css">
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-lg ">
@@ -200,7 +18,7 @@ Gallery/cd11.webp:hover{
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
             <span class="navbar-toggler-icon" id="tog"></span>
         </button>
-        <div class="Collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link ">Products</a>
@@ -273,13 +91,13 @@ Gallery/cd11.webp:hover{
         </button>
       </div>
     <div class="container">
-        <div class="row g-4">
+        <div class="row g-4 mt-2">
             <div class="col-md-4" data-aos="fade-up">
                 <div class="product-card">
-                    <img src="Gallery/cd.webp" class="product-img" alt="CD">
+                    <img src="Gallery/cd (2).webp" class="product-img" alt="CD">
                     <h4>Premium CDs</h4>
-                    <p>High-durability CDs for long-term storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <p>High-durability CDs for long-term and storage.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
@@ -287,7 +105,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd1 (2).webp" class="product-img" alt="DVD">
                     <h4>High-Quality DVDs</h4>
                     <p>Reliable DVDs for data backup and media storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
@@ -295,15 +113,15 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd2 (2).webp" class="product-img" alt="Blu-ray">
                     <h4>Blu-ray Discs</h4>
                     <p>Advanced Blu-ray discs with maximum capacity.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="product-card">
                     <img src="Gallery/cd3.webp" class="product-img" alt="Rewritable CD">
                     <h4>Rewritable CDs</h4>
-                    <p>Eco-friendly and reusable optical discs.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <p>Eco-friendly and reusable for just optical  discs.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
@@ -311,7 +129,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd4.webp" class="product-img" alt="Archival DVD">
                     <h4>Archival DVDs</h4>
                     <p>Long-lasting DVDs for professional data storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
@@ -319,7 +137,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd5.webp" class="product-img" alt="Ultra HD Blu-ray">
                     <h4>Ultra HD Blu-ray</h4>
                     <p>Crystal-clear 4K Blu-ray discs for high-definition storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="1200">
@@ -327,15 +145,15 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd6.webp" class="product-img" alt="Gold Archival CD">
                     <h4>Gold Archival CDs</h4>
                     <p>Premium gold-layered CDs for ultimate longevity.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="1400">
                 <div class="product-card">
                     <img src="Gallery/cd7.webp" class="product-img" alt="Dual-Layer DVD">
                     <h4>Dual-Layer DVDs</h4>
-                    <p>Twice the storage capacity of standard DVDs.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <p>Twice the storage Long capacity of standard DVDs.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="1600">
@@ -343,7 +161,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd8.webp" class="product-img" alt="Mini CD">
                     <h4>Mini CDs</h4>
                     <p>Compact and portable CDs for specialized storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="1800">
@@ -351,7 +169,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd9.webp" class="product-img" alt="M-Disc Blu-ray">
                     <h4>M-Disc Blu-ray</h4>
                     <p>Archival-grade Blu-ray discs for permanent data storage.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="2000">
@@ -359,7 +177,7 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd10.webp" class="product-img" alt="Printable DVD">
                     <h4>Printable DVDs</h4>
                     <p>Customizable DVDs with printable surfaces for labeling.</p>
-                    <button class="btn btn-buy">Buy Now</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Buy Now</a>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="2200">
@@ -367,51 +185,12 @@ Gallery/cd11.webp:hover{
                     <img src="Gallery/cd11.webp" class="product-img" alt="Scratch-Resistant CD">
                     <h4>Scratch-Resistant CDs</h4>
                     <p>Durable CDs designed to withstand everyday use.</p>
-                    <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go
-                        somewhere</a>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Buy Now</a>
                 </div>
             </div>            
         </div>
     </div>
-  <!-- Modal
-  <div class="modal fade" style="color: #333;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ocean Gate</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col">
-                <img src="Gallery/cd11.webp" alt="CD12" class="img-fluid">
-            </div>
-            <div class="col" style="color:#333"> -->
-                    <!-- <dt>Material:</dt>
-                    <dd>Scratch-resistant CDs, crafted for durability, ensure long-lasting performance without compromising quality. Perfect for everyday use, these CDs resist wear and tear, keeping your data safe.</dd> -->
-                     <!-- <dt>Durable Design:</dt>
-                    <dd> Built to withstand everyday handling and wear.</dd>  
-<dt>Scratch-Resistant Surface:</dt><dd> Protects data from damage and ensures longevity.</dd>  
-<dt>High-Quality Storage:</dt> <dd>Maintains excellent playback and data integrity.</dd> 
-<dt>Versatile Use:</dt> <dd>Ideal for music, videos, backups, and software storage.</dd>  
-<dt>Reliable Performance:</dt> <dd>Reduces the risk of data loss due to scratches.</dd> 
-        </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <dt>Versatile Use:</dt> <dd>Ideal for music, videos, backups, and software storage.</dd>  
-<dt>Reliable Performance:</dt> <dd>Reduces the risk of data loss due to scratches.</dd>
-            </div>
-        </div>
-        <div class="modal-footer" style="justify-content: center;">
-        <dt><del class="text-secondary">Price:8.3$</del></dt>  <dd><strong>Only:5.3$</strong></dd><div class="row"><div class="col">
-        <i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star-half-stroke" style="color: gold;"></i></div></div>
-        Qty<input type="number">
-
-        <button type="button" class="btn btn-outline-success" style="width: 400px;">Buy Now</button>
-        </div>
-      </div>
-    </div> -->
+  
     <!-- Modal -->
 <div class="modal fade" style="color: #333;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -444,8 +223,8 @@ Gallery/cd11.webp:hover{
                 </div>
                 <div class="modal-footer d-flex flex-column align-items-center">
                     <div class="mb-2">
-                        <del class="text-secondary">Price: $8.3</del>  
-                        <strong class="text-success">Only: $5.3</strong>
+                        <del class="text-secondary">Price: $83.3</del>  
+                        <strong class="text-success">Only: $64.3</strong>
                     </div>
                     <div class="mb-2">
                         <i class="fa-solid fa-star" style="color: gold;"></i>
@@ -459,204 +238,763 @@ Gallery/cd11.webp:hover{
                         <label for="quantity" class="me-2"><strong>Qty:</strong></label>
                         <input type="number" id="wow" class="form-control" style="width: 80px;" min="0" value="0" required>
                     </div>
-                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Buy()">Buy Now</button>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Guy()">Buy Now</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- <script>
-    function buyNowAlert() {
-        alert("Thank you for your purchase! Your order has been placed successfully.");
-    }
-</script> -->
-
-<!-- <script>
-    function Alert() {
-        var quantity = document.getElementById('quantity').value; // Qty input value
-        if (quantity === "" || quantity <= 0) {
-            alert("Please enter a valid quantity before purchasing.");
-        } else {
-            alert("Thank you for your purchase! Your order has been placed successfully.");
-        }
-    }
-</script> -->
-<!-- <script>
-    function Alert() {
-        var quantity = document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 0) {
-            alert("Please enter a valid quantity before purchasing.");
-        } else {
-            alert("Thank you for your purchase! Your order has been placed successfully.");
-            var modal = document.getElementById('staticBackdrop'); // Get modal by ID
-            var modalInstance = bootstrap.Modal.getInstance(modal); // Bootstrap modal instance
-            modalInstance.hide(); // Close modal
-        }
-    }
-</script> -->
-
-<!-- <script>
-    function Alert() {
-        var quantity =document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 0) {
-            alert("plaese alert");
-        }
-        else {
-            alert("thank you");
-            var modal = document.getElementById('staticBackdrop');
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide(); 
-        }
-    }
-</script> -->
-<!-- <script>
-    function Alert() {
-        alert("Thank you for shopping this the website")
-    }
-</script> -->
-<!-- <script>
-    function Alert(){
-        var quantity =document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 0) {
-            alert("Plesures");
-        } else {
-            alert("quantityfor me")
-        }
-    }
-</script> -->
-<!-- <script>
-    function Alert () {
-        var quantity = document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 0)  {
-        alert("Please fill your quantity");
-    } else {
-        alert("Plaese try")
-    }
-}
-</script> -->
-<!-- <script>
-    function BuyNowAlert() {
-        var quantity = document.getElementById('quantity').value; 
-        if (quantity === "" || quantity >= 3) {
-            alert("chal oay shukriya");
-        } else {
-            alert("Abay bhai quantity tou de");
-        }
-    }
-</script> -->
-<!-- <script>
-    function BuyNowAlert() {
-        var quantity = document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 3) {
-            alert("Thank you");
-        } else {
-            alert ("Just for minutes...")
-        }
-    }
-</script> -->
-<!-- <script>
-    function BuyNowAlert() {
-        var quantity = document.getElementById('quantity').value;
-        if (quantity === "" || quantity >= 4) {
-            alert("take care for yourself")
-        } else {
-            alert ("thats it right");
-            var modal = document.getElementById('staticBackdrop');
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        }
-    }
-</script> -->
-<!-- <script>
-    function BuyNowAlert() {
-        var quantity = document.getElementById('quantity').value;
-        if (quantity === "" || quantity <= 2) {
-            alert ("Please try again");
-        } else {
-            alert("thank you");
-            var modal = document.getElementById('staticBackdrop');
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        }
-    }
-</script> -->
-<!-- <script>
-    function Buy() {
-        var wow = document.getElementById('wow').value;
-        if (wow === "" ||  wow <= 2) {
-            alert ("thats for wow")
-        } else {
-            alert("likes for wow");
-            var modal = document.getElementById("staticBackdrop");
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        }
-    }
-</script> -->
-
-<!-- Include jQuery (اگر پہلے سے شامل نہیں ہے) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- <script>
-    $(document).ready(function() {
-        $(".buy-now-btn").click(function() {
-            var wow = $("#wow").val(); // Quantity input کا ویلیو لینا
-
-            if (wow === "" || wow <= 0) {
-                alert("Please enter a valid quantity before purchasing.");
-            } else {
-                alert("Thank you for your purchase! Your order has been placed successfully.");
-
-                // Bootstrap modal کو hide کرنے کے لیے
-                $("#staticBackdrop").modal("hide");
-            }
-        });
-    });
-</script> -->
-<!-- <script>
-    function Buy() {
-        var wow = document.getElementById('wow').value;
-        if (wow === "" || wow <= 2) {
-            alert("control");
-        } else {
-            alert("liked");
-            var modal = document.getElementById("staticBackdrop")
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        }
-    }
-</script> -->
-
-<!-- <script>
-    function Buy() {
-        var wow = document.getElementById('wow').value;
-        if (wow === "" || wow >= 2) {
-            alert("wow is not")
-        } else {
-            alert("thank you")
-            var modal = document.getElementById("staticBackdrop");
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        }
-
-    }
-</script> -->
 
 <script>
-    function Buy() {
+    function Guy() {
         var wow = document.getElementById('wow').value;
         if (wow === "" || wow <= 0) {
-            alert("please response")
+            alert("Please enter a valid quantity before purchasing.")
         }  else {
-            alert ("Thats for good!")
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
             var modal = document.getElementById("staticBackdrop");
             var modalInstance = bootstrap.Modal.getInstance(modal);
             modalInstance.hide();
         }
     }
 </script>
+<!-- second Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd10.webp" id="hl1" alt="CD11" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Durable Design:</dt>
+                        <dd>Built to withstand everyday handling and wear.</dd>  
+                        <dt>Scratch-Resistant Surface:</dt>
+                        <dd>Protects data from damage and ensures longevity.</dd>  
+                        <dt>High-Quality Storage:</dt> 
+                        <dd>Maintains excellent playback and data integrity.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Versatile Use:</dt> 
+                        <dd>Ideal for music, videos, backups, and software storage.</dd>  
+                        <dt>Reliable Performance:</dt> 
+                        <dd>Reduces the risk of data loss due to scratches.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $79.3</del>  
+                        <strong class="text-success">Only: $56.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="row" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Buy()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
+    function Buy() {
+        var row = document.getElementById('row').value;
+        if (row === "" || row <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop1");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Third Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd9.webp" id="hl1" alt="CD11" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Durable Design:</dt>
+                        <dd>Built to withstand everyday handling and wear.</dd>  
+                        <dt>Scratch-Resistant Surface:</dt>
+                        <dd>Protects data from damage and ensures longevity.</dd>  
+                        <dt>High-Quality Storage:</dt> 
+                        <dd>Maintains excellent playback and data integrity.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Versatile Use:</dt> 
+                        <dd>Ideal for music, videos, backups, and software storage.</dd>  
+                        <dt>Reliable Performance:</dt> 
+                        <dd>Reduces the risk of data loss due to scratches.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $63.3</del>  
+                        <strong class="text-success">Only: $48.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="how" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="why()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
+    function why() {
+        var how = document.getElementById('how').value;
+        if (how === "" || how <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop2");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Fourth Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd8.webp" id="hl1" alt="CD11" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Durable Design:</dt>
+                        <dd>Built to withstand everyday handling and wear.</dd>  
+                        <dt>Scratch-Resistant Surface:</dt>
+                        <dd>Protects data from damage and ensures longevity.</dd>  
+                        <dt>High-Quality Storage:</dt> 
+                        <dd>Maintains excellent playback and data integrity.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Versatile Use:</dt> 
+                        <dd>Ideal for music, videos, backups, and software storage.</dd>  
+                        <dt>Reliable Performance:</dt> 
+                        <dd>Reduces the risk of data loss due to scratches.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $26.3</del>  
+                        <strong class="text-success">Only: $17.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="just" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="fly()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function fly() {
+        var just = document.getElementById('just').value;
+        if (just === "" || just <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop3");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Fifth Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd7.webp" id="hl1" alt="CD11" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Seamless Playback:</dt>
+                        <dd> Ensures smooth transitions between layers without interruptions.</dd>  
+                        <dt>Secure Data Archiving:</dt>
+                        <dd>Maintains data integrity for long-term storage needs.</dd>  
+                        <dt>Cost-Effective Solution:</dt> 
+                        <dd>More storage per disc reduces overall media costs.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Ideal for Large Files:</dt> 
+                        <dd>Perfect for movies, software backups, and extensive data archives.</dd>  
+                        <dt>Optimized Compatibility:</dt> 
+                        <dd>Works with most DVD players and computer drives.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $29.3</del>  
+                        <strong class="text-success">Only: $18.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="grow" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="fast()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function fast() {
+        var grow = document.getElementById('grow').value;
+        if (grow === "" || grow <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop4");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- sixth Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd6.webp" id="hl1" alt="CD6" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Premium Gold Layer:</dt>
+                        <dd>Features a gold reflective layer to prevent oxidation and data.</dd>  
+                        <dt>Ultimate Longevity:</dt>
+                        <dd>Designed for archival purposes with a lifespan of 100+ years.</dd>  
+                        <dt>High Data Integrity:</dt> 
+                        <dd>Ensures reliable storage without degradation over time.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Ideal for Critical Data:</dt> 
+                        <dd>Perfect for preserving photos, documents, and professional.</dd>  
+                        <dt>Optimized Compatibility:</dt> 
+                        <dd>Works seamlessly with most CD players and drives.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $35.5</del>  
+                        <strong class="text-success">Only: $25.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="brow" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Noorani()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Noorani() {
+        var brow = document.getElementById('brow').value;
+        if (brow === "" || brow <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop5");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Seventh Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd5.webp" id="hl1" alt="CD5" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>High-Capacity Storage:</dt> 
+                        <dd>Offers ultra-high-definition videos and large files.</dd> 
+                        <dt>Seamless Playback:</dt>
+                        <dd>Optimized  and uninterrupted viewing experiences.</dd>  
+                        <dt>HDR Compatibility:</dt> 
+                        <dd>Supports High Dynamic Range contrast and realism.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Crystal-Clear 4K Resolution:</dt>
+                        <dd>Delivers stunning picture quality with vibrant colors and sharp details.</dd>
+                        <dt>Efficient Compression:</dt> 
+                        <dd>Retains quality while maximizing storage efficiency.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $15.3</del>  
+                        <strong class="text-success">Only: $10.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="Look" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Mercury()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Mercury() {
+        var Look = document.getElementById('Look').value;
+        if (Look === "" || Look <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop6");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Eight Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd4.webp" id="hl1" alt="CD4" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Data Preservation:</dt>
+                        <dd>Designed to securely store data for decades degradation.</dd>  
+                        <dt>Gold Layer Technology:</dt>
+                        <dd>Enhanced protection against oxidation and data loss.</dd>  
+                        <dt>High Storage Capacity:</dt> 
+                        <dd>Ideal for backing up  photos, and professional archives.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Error-Free Recording:</dt> 
+                        <dd>Advanced error correction for reliable and accurate data storage.</dd>  
+                        <dt>Scratch and UV Resistant:</dt> 
+                        <dd>Built to withstand environmental factors and everyday handling.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $15.3</del>  
+                        <strong class="text-success">Only: $9.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="rol" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Rolex()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Rolex() {
+        var rol = document.getElementById('rol').value;
+        if (rol === "" || rol <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop7");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- NineTh Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd3.webp" id="hl1" alt="CD3" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Eco-Friendly and Reusable:</dt>
+                        <dd>Designed to reduce waste by supporting multiple rewrites.</dd>  
+                        <dt>Reliable Data Integrity:</dt>
+                        <dd>Ensures secure storage and  data retrieval every time.</dd>  
+                        <dt>High Compatibility:</dt> 
+                        <dd>Works seamlessly with most CD writers playback devices.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Smooth Erase and Rewrite:</dt> 
+                        <dd>Allows efficient data replacement without impacting quality.</dd>  
+                        <dt>Durable Build:</dt> 
+                        <dd>Scratch-resistant surface for long-term usage and protection.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $13.4</del>  
+                        <strong class="text-success">Only: $7.4</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="Justice" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="League()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function League() {
+        var Justice = document.getElementById('Justice').value;
+        if (Justice === "" || Justice <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop8");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Tenth Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd2 (2).webp" id="hl1" alt="CD2" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Maximum Storage Capacity:</dt>
+                        <dd>Ideal storing high-definition movies, large backups.</dd>  
+                        <dt>Crystal-Clear Playback:</dt>
+                        <dd>Delivers 1080p and 4K video quality with enhanced.</dd>  
+                        <dt>Scratch-Resistant:</dt> 
+                        <dd>Designed to withstand everyday handling data loss.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>High-Speed Data Transfer:</dt> 
+                        <dd>Ensures quick read/write speeds for large files seamless playback.</dd>  
+                        <dt>Enhanced Data Security:</dt> 
+                        <dd>Built with advanced error correction to protect your data.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $14.6</del>  
+                        <strong class="text-success">Only: $8.5</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="Super" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Man()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Man() {
+        var Super = document.getElementById('Super').value;
+        if (Super === "" || Super <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop9");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Eleventh Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd1 (2).webp" id="hl1" alt="CD1" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>Durable Design:</dt>
+                        <dd>Ensures long-lasting performance and to scratches.</dd>  
+                        <dt>High Storage Capacity:</dt>
+                        <dd>Ideal for storing large files, movies, and software backups.</dd>  
+                        <dt>Excellent Playback Quality:</dt> 
+                        <dd>Maintains crisp audio and video without interruptions.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Wide Compatibility:</dt> 
+                        <dd>Works seamlessly with most DVD players and computers.</dd>  
+                        <dt>Reliable Data Integrity:</dt> 
+                        <dd>Reduces the risk of data loss for important files.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $28.3</del>  
+                        <strong class="text-success">Only: $25.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="Gta" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Vice()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Vice() {
+        var Gta = document.getElementById('Gta').value;
+        if (Gta === "" || Gta <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop10");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
+<!-- Twelveth Modal -->
+<div class="modal fade" style="color: #333;" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" >Ocean Gate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="Gallery/cd (2).webp" id="hl1" alt="CD (2)" class="img-fluid">
+                    </div>
+                    <div class="col" style="color:#333">
+                        <dt>High Durability:</dt>
+                        <dd>Engineered to resist scratches wear for prolonged use.</dd>  
+                        <dt>Large Storage Capacity::</dt>
+                        <dd>Suitable for storing high-quality audio essential files.</dd>  
+                        <dt>Heat and UV Resistant:</dt> 
+                        <dd>Protects data from  damage during long-term storage.</dd>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <dt>Smooth Recording Surface:</dt> 
+                        <dd>Minimizes errors during burning for data writing.</dd>  
+                        <dt>Wide Compatibility:</dt> 
+                        <dd>Works effortlessly with most and car stereos.</dd>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-column align-items-center">
+                    <div class="mb-2">
+                        <del class="text-secondary">Price: $23.3</del>  
+                        <strong class="text-success">Only: $15.3</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: gold;"></i>
+                        <span class="ms-2">(4.5/5)</span>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="quantity" class="me-2"><strong>Qty:</strong></label>
+                        <input type="number" id="Pubg" class="form-control" style="width: 80px;" min="0" value="0" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" style="width: 400px;" onclick="Game()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Game() {
+        var Pubg = document.getElementById('Pubg').value;
+        if (Pubg === "" || Pubg <= 0) {
+            alert("Please enter a valid quantity before purchasing.")
+        }  else {
+            alert ("Thank you for your purchase! Your order has been placed successfully.")
+            var modal = document.getElementById("staticBackdrop11");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    }
+</script>
 
 
   </div>
