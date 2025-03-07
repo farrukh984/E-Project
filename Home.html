@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean Gate</title>
+<link rel="stylesheet" href="home.css">
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
+    header { background-color: #023e8a; color: #fff; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .hero { text-align: center; padding: 50px 20px; background-color: #0096c7; color: #fff; }
+    .hero img { max-width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    .hero button { background-color: #023e8a; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    .hero button:hover { background-color: #0077b6; }
+    .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .category { background-color: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; }
+    .category img { max-width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+    .category h3 { color: #0077b6; }
+    .category ul { list-style-type: disc; padding-left: 20px; text-align: left; }
+    footer { text-align: center; padding: 15px; background-color: #023e8a; color: #fff; margin-top: 20px; }
+</style>
+</head>
+<body>
+<header>
+    <h1>Ocean Gate</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<section class="hero">
+    <img src="Gallery/Home image.webp" alt="Computer Accessories">
+    <h2>Welcome to Ocean Gate</h2>
+    <p>Your One-Stop Shop for Computer Accessories</p>
+    <button>Explore Products</button>
+</section>
+<section class="categories">
+    <div class="category">
+        <img src="Gallery/hm catogery.webp" alt="Optical Storage">
+        <h3>Optical Storage Devices</h3>
+        <ul>
+            <li>CD-ROM</li>
+            <li>DVD-ROM</li>
+            <li>Blu-ray Discs</li>
+        </ul>
+    </div>
+    <div class="category">
+        <img src="Gallery/hm category2.webp" alt="Flash Storage">
+        <h3>Flash Storage Devices</h3>
+        <ul>
+            <li>USB Flash Drives</li>
+            <li>Memory Cards</li>
+            <li>SSD</li>
+        </ul>
+    </div>
+    <div class="category">
+        <img src="Gallery/hm category 3.webp" alt="Hard Disk Drives">
+        <h3>Hard Disk Drives (HDD)</h3>
+        <ul>
+            <li>Internal HDDs</li>
+            <li>External HDDs</li>
+            <li>NAS Drives</li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2025 Ocean Gate. All rights reserved.</p>
+</footer>
+</body>
+</html>
