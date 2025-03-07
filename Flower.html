@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fresh and beautiful flowers for every occasion. Order bouquets, roses, and more from our flower shop with fast delivery.">
+    <meta name="keywords" content="flowers, bouquets, roses, flower delivery, fresh flowers">
+    <meta name="author" content="Fariha Shafiq">
+    <title>Flower Shop - Fresh Flowers Delivered</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #ff9f80;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #ff6f61;
+            color: white;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .col-6 {
+            flex: 1;
+            box-sizing: border-box;
+            max-width: 50%;
+        }
+        .contact-form {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #ff6f61;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #e65a50;
+        }
+        .contact-details p {
+            margin-bottom: 1rem;
+        }
+        .contact-details a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Flower Shop</h1>
+        <p>Fresh Flowers Delivered to Your Doorstep</p>
+    </header>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="products">
+        <h2>Our Flowers</h2>
+        <div class="products">
+            <div class="product">
+                <img src="Gallery/cd1.webp" alt="Beautiful bouquet">
+                <h3>Beautiful Bouquet</h3>
+            </div>
+            <div class="product">
+                <img src="roses.jpg" alt="Fresh red roses">
+                <h3>Fresh Red Roses</h3>
+            </div>
+            <div class="product">
+                <img src="orchid.webp" alt="Elegant orchids">
+                <h3>Elegant Orchids</h3>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our flower shop, where every petal tells a story of love, joy, and celebration. Our mission is to provide high-quality, fresh, and vibrant flowers that enhance every moment of your life.</p>
+    </section>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>From weddings to anniversaries, birthdays to "just because" moments, we take pride in crafting stunning arrangements tailored to your needs. With sustainable practices and a passion for excellence, we aim to make the world more beautiful, one bouquet at a time.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Whether you have a question, need assistance with your order, or want to share feedback, our team is here to help.</p>
+        <div class="row">
+            <div class="col-6">
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:info@flowershop.com">info@flowershop.com</a></p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Address:</strong> 123 Blossom Street, Garden City, FL 54321</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Flower Shop. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a> and <a href="#">Facebook</a>.</p>
+    </footer>
+</body>
+</html>
