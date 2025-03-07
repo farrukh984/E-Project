@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 6f4cf892a8630e50eca0b7c64c7d61276659a109
 .navbar {
     position: fixed;
      top: 0;
@@ -141,7 +137,6 @@ dd{
 #staticBackdropLabel:hover{
     color: #0a192f;
 }
-<<<<<<< HEAD
 /* #hl1{
     transition: transform 0.5s;
 }
@@ -149,20 +144,13 @@ dd{
 #hl1:hover{
     transform: scale(1.05);
 } */
-=======
-
->>>>>>> 6f4cf892a8630e50eca0b7c64c7d61276659a109
 Gallery/cd11.webp{
    transition: transform 0.5s;
 }
 Gallery/cd11.webp:hover{
     transform: scale(1.05);
 }
-<<<<<<< HEAD
 .navbar{
-=======
-.navbar {
->>>>>>> 6f4cf892a8630e50eca0b7c64c7d61276659a109
     position: fixed;
     top: 0;
     left: 0;
